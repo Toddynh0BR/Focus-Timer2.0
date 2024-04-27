@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+
+    <!--Config-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+          rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!--CSS-JS-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer type="module"></script>
+
+    <!--Others-->
+    <title>Focus Timer 2.0</title>
+    <meta name="description" content="Temporizador estilo pomodoro">
+     
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="toggle-mode" id="Toggle">
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+           </div>
+
+        <div class="timer">
+         
+         <section id="Timer" class="flex">
+            <span id="minutes">25</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+         </section>
+
+         <section id="controls">
+            <button data-action="toggleRunning" class="configBtn ph ph-play-circle" id="Play"></button><!--Iniciar-->
+            <button data-action="toggleRunning" class="configBtn ph ph-pause-circle" id="Stop"></button><!--Pausar-->
+
+            <button data-action="icrement" class="configBtn ph ph-plus-circle" id="icrement"></button><!--Adicionar 5 minutos-->
+            <button data-action="decrement" class="configBtn ph ph-minus-circle" id="decrement"></button><!--Retira 5 minutos-->
+         </section>
+
+        </div>
+
+
+
+        <div class="btn-themes">
+
+          <button class="Florest btn">
+            <i class="ph ph-tree"></i>
+            <audio src="assets/Floresta.wav" id="FlorestAudio"></audio>
+          </button>
+
+          <button class="cloudy btn">
+            <i class="ph ph-cloud-rain"></i>
+            <audio src="assets/Chuva.wav" id="CloudyAudio"></audio>
+        </button>
+
+        <button class="city btn">
+            <i class="ph ph-storefront"></i>
+            <audio src="assets/Cafeteria.wav" id="CityAudio"></audio>
+        </button>
+
+        <button class="fire btn ">
+            <i class="ph ph-flame"></i>
+            <audio src="assets/Lareira.wav" id="FireAudio"></audio>
+        </button>
+
+        </div>
+    </div>
+    
+</body>
+</html>

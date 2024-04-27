@@ -1,0 +1,161 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ font-size: 62.5%;
+ --color-blue: #02799D;
+ --color-gray-100: #E1E1E6;
+ --color-gray-200: #323238;
+ --color-white: #ffffff;
+}
+
+
+
+.main {
+ display: flex;
+ gap: 19.2rem;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+
+.dark body {
+ background-color: black;
+}
+
+/*timer*/
+
+.timer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 5rem;
+}
+
+span {
+ font-size: 13rem;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 500;
+ color: var(--color-gray-200);
+}
+.dark span{
+color: var(--color-white);
+}
+
+#controls {
+ display: flex;
+ align-items: center;
+ gap: 5rem;
+ padding-right: 1rem;
+}
+
+.configBtn {
+width: 5rem;
+height: 5rem;
+font-size: 6rem;
+font-weight: 500;
+border: none;
+background: none;
+color: var(--color-gray-200);
+transition: 0.7s ease-in-out;
+}
+.dark .configBtn{
+ color: var(--color-white);
+}
+
+.configBtn:hover {
+ color: #000000;
+ cursor: pointer;
+}
+.dark .configBtn:hover {
+ color: var(--color-gray-100);
+}
+
+
+
+
+/*Btn-Theme*/
+
+.btn-themes {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 3.2rem;
+}
+
+.btn {
+ font-size: 5.5rem;
+ padding: 2.5rem;
+ padding-top: 2.6rem;
+ padding-bottom: 2.6rem;
+ border: none;
+ border-radius: 2rem;
+ color: var(--color-gray-200);
+ transition: 0.7s ease-in-out;
+ background-color: var(--color-gray-100);
+}
+.dark .btn {
+ color: black;
+ background-color: white;
+}
+
+.btn:hover{
+ background-color: #ababb1;
+ cursor: pointer;
+}
+.dark .btn:hover {
+ background-color: #212124;
+}
+
+
+/*JS*/
+
+.running .ph-play-circle,
+.running .ph-timer,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle {
+display: none;
+}
+
+.On {
+ background-color: var(--color-blue);
+ color: var(--color-white);
+}
+.dark .On{
+ background-color: rgb(182, 8, 8);
+}
+
+.On:hover {
+ background-color: #025c77;
+}
+.dark .On:hover {
+ background-color: rgb(122, 10, 10);
+}
+
+/*Toggle-mode*/
+
+
+.toggle-mode {
+ font-size: 4rem;
+ position: fixed;
+ right: 1.6rem;
+ top: 1.6rem;
+ color: var(--color-gray-200);
+ transition: 0.7s ease-in-out;
+}
+.toggle-mode:hover {
+ cursor: pointer;
+}  
+
+.dark .ph-sun,
+html:not(.dark) .ph-moon {
+ display: none;
+}
+
+.dark .ph-moon {
+ color: var(--color-white);
+}
+
